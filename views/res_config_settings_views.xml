@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.robolabs</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="45"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='languages']" position="after">
+                <div id="robolabs">
+                    <block title="Robolabs Integration Settings" name="robolabs_setting_container">
+                        <setting id="robolabs_key" company_dependent="1">
+                            <field name="robolabs_key" class="d-block" password="True" style="width: 100%;"/>
+                        </setting>
+                        <setting id="robolabs_base_url" company_dependent="1">
+                            <field name="robolabs_base_url" class="d-block" password="False" style="width: 100%;"/>
+                        </setting>
+                    </block>
+                </div>
+
+            </xpath>
+        </field>
+    </record>
+</odoo>

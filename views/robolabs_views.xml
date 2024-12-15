@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Action: View Robo Invoices -->
+        <record id="action_robo_invoice" model="ir.actions.act_window">
+            <field name="name">RoboLabs Invoices</field>
+            <field name="res_model">robo.invoice</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_filter_robo_invoice_group_by_month': 1}</field>
+        </record>
+
+        <!-- Main Menu -->
+        <menuitem id="menu_robolabs" name="RoboLabs" sequence="10" action="action_robo_invoice"/>
+
+        <!-- Submenu -->
+        <menuitem id="menu_robolabs_submenu" name="Invoice Actions" parent="menu_robolabs" sequence="10" />
+
+        <!-- Menu: View Invoices -->
+        <menuitem id="menu_robolabs_invoices" name="View" parent="menu_robolabs_submenu" action="action_robo_invoice" sequence="10" />
+
+        <!-- Action: Fetch Invoices -->
+        <record id="action_fetch_invoices" model="ir.actions.act_window">
+            <field name="name">Fetch Invoices</field>
+            <field name="res_model">robo.invoice.fetch.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu: Fetch Invoices -->
+        <menuitem id="menu_fetch_invoices" name="Fetch Invoices" parent="menu_robolabs_submenu" action="action_fetch_invoices" sequence="20" />
+
+        <!-- Action: Create Invoice -->
+        <record id="action_create_invoice" model="ir.actions.act_window">
+            <field name="name">Create Invoice</field>
+            <field name="res_model">robo.invoice.create.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu: Create Invoice -->
+        <menuitem id="menu_create_invoice" name="Create Invoice" parent="menu_robolabs_submenu" action="action_create_invoice" sequence="30" />
+
+        <record id="robo_invoice_tree_view" model="ir.ui.view">
+            <field name="name">robo.invoice.tree</field>
+            <field name="model">robo.invoice</field>
+            <field name="arch" type="xml">
+                <tree create="false" string="RoboLabs Invoices" decoration-info="state == 'draft'" decoration-danger="state == 'cancel'" decoration-warning="state == 'open'">
+                    <field name="robo_id"/>
+                    <field name="date_invoice"/>
+                    <field name="invoice_type"/>
+                    <field name="number"/>
+                    <field name="total"/>
+                    <field name="state" widget="statusbar"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="robo_invoice_line_tree_view" model="ir.ui.view">
+            <field name="name">robo.invoice.line.tree</field>
+            <field name="model">robo.invoice.line</field>
+            <field name="arch" type="xml">
+                <tree create="false" string="Invoice Lines">
+                    <field name="product_id"/>
+                    <field name="description"/>
+                    <field name="price_with_vat"/>
+                    <field name="quantity"/>
+                    <field name="price_unit"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
