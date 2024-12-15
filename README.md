@@ -5,6 +5,10 @@ This module provides integration with the RoboLabs API to streamline invoice man
 
 ---
 
+## 🖼️ Example Screenshots
+
+<img width="1512" alt="Screenshot 2024-12-15 at 17 17 21" src="https://github.com/user-attachments/assets/a570db2a-1025-44f8-a8f7-bfff19767b1f" />
+
 ## 📦 Features
 
 ### 🧾 Invoice Fetching Wizard
@@ -106,11 +110,6 @@ Settings for RoboLabs API integration.
 | robolabs_key       | Char   | RoboLabs API Key                 |
 | robolabs_base_url  | Char   | Base URL for RoboLabs API         |
 
----
-
-## 🖼️ Example Screenshots
-
-![Invoices]<img width="1512" alt="Screenshot 2024-12-15 at 17 17 21" src="https://github.com/user-attachments/assets/a570db2a-1025-44f8-a8f7-bfff19767b1f" />
 
 ---
 
