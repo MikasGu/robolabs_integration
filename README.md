@@ -114,7 +114,7 @@ Settings for RoboLabs API integration.
 ---
 
 ## 🌐 Links
-- **RoboLabs API Documentation**: [https://sandbox.robolabs.lt/docs](https://sandbox.robolabs.lt/docs)
+- **RoboLabs API Documentation**: [https://sandbox.robolabs.lt/docs]([https://sandbox.robolabs.lt/docs](https://sandbox.robolabs.lt/api/v2/docs/YCaVLsef4oxNtChWgveiHbLmu_eUN5wJJwrpM3ZNQ0YWd7nUrdOAgFZVoIKhaRgo/en_US/))
 - **Odoo Documentation**: [https://www.odoo.com/documentation](https://www.odoo.com/documentation)
 
 ---
