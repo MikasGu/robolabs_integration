@@ -110,14 +110,7 @@ Settings for RoboLabs API integration.
 
 ## 🖼️ Example Screenshots
 
-![Fetch Wizard Example](https://via.placeholder.com/800x400?text=Fetch+Wizard+Example)
-
-![Create Wizard Example](https://via.placeholder.com/800x400?text=Create+Wizard+Example)
-
----
-
-## 📋 License
-This module is licensed under the MIT License. See the LICENSE file for details.
+![Invoices]<img width="1512" alt="Screenshot 2024-12-15 at 17 17 21" src="https://github.com/user-attachments/assets/a570db2a-1025-44f8-a8f7-bfff19767b1f" />
 
 ---
 
@@ -128,5 +121,4 @@ This module is licensed under the MIT License. See the LICENSE file for details.
 ---
 
 ## 🛠️ Maintainers
-- **Your Name** ([your.email@example.com](mailto:your.email@example.com))
-- **Your Company**
+- **Mikas Gudzinevičius** ([gudzineviciusm@gmail.com](mailto:gudzineviciusm@gmail.com))
